@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor Registro</title>
+    <link rel="stylesheet" href="estilos/registro.css">
+    <link rel="stylesheet" href="src/login.js">
+</head>
+<body>
+
+<main id="login">
+
+    <section class="login_container">
+        <div class="contenedor">
+            <div class="menu_inicio">
+                <div class="text_page">
+                    <h1 id="text_page">EasyListening.com</h1>
+                    <h3 id="slogan_page"> "Vibe With The Music That Speaks Your Language"</h3>
+                </div>
+                <div class="usuario">
+                    <br>
+                    <label class="titulo_usuario" id="text_username">Usuario</label>
+                    <br>
+                    <input type="text" class="espacio" placeholder="Ingrese su Usuario" id="usernameInput">
+                        <i id="username_icon"class="bi bi-person-circle"></i>
+                </div>
+                <div class="contrasena">
+                    <label class="titulo_contrasena" id="text_password">Contraseña</label>
+                    <br>
+                    <input type="password" class="espacio" placeholder="Ingrese su Contraseña"  id="passwordInput">
+                    <button id="password_icon">
+                        <i class="bi bi-eye-fill" id="viewPassword"></i>
+                    </button>
+                </div>
+                <div class="boton_inicio_sesion"> 
+                        <button class="inicio_sesion" id="LoginBtn"> Iniciar sesión </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="back_section_video">
+        <video class="back_login" muted autoplay loop>
+            <source src="./estilos/imagenes/Moullinex △ GPU Panic - Bring the Lights Down (official video).mp4" type="video/mp4">
+            <div class="capa"></div>
+        </video>
+    </section>
+</main>
+
+<script src="../reproductor_de_música/src/login.js"></script>
+</body>
+</html>

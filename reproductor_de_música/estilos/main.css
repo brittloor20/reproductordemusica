@@ -1,0 +1,339 @@
+@import url('https://fonts.cdnfonts.com/css/curitiba');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Hedvig+Letters+Serif:opsz@12..24&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Hedvig+Letters+Serif:opsz@12..24&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Hedvig+Letters+Serif:opsz@12..24&family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+
+/*Start: Navbar*/
+
+
+.header_content {
+
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 50em;
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    padding: 1.5em ;
+    background-color: rgba(255, 255, 255, 0.463);
+  
+}
+
+.info_izquierda h1 {
+
+    font-family: 'Curitiba', sans-serif;
+    font-size: 42px;
+    padding: 15px 15px;
+    color: rgb(5, 5, 71);
+}
+
+.info_izquierda {
+
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_derecha button {
+
+    background-color: rgba(255, 255, 255, 0.948);
+    border: transparent;
+    border-radius: 95px;
+    padding: 0.5em 1em;
+    font-size: 15px;
+    color: rgb(10, 10, 46);
+    width: fit-content;
+   
+}
+
+/*End: Navbar*/
+
+
+/*Start: Home Page*/
+
+
+main {
+
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    background-image: linear-gradient(to top, rgba(4, 3, 11, 0.229), rgba(178, 217, 239, 0.599)), url(./imagenes/metallic-liquid-element-texture-background-with-waves.jpg);
+    grid-template-columns: 1fr 1fr;
+    padding: 115px 80px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*Start: Buscador de Canciones*/
+
+.info_izquierda_search {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+}
+
+#search_container {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    color: black;
+}
+
+#texto_buscar {
+
+    background-color: rgba(255, 255, 255, 0.93);
+    border: transparent;
+    border-radius: 80px;
+    padding: 0.5em 1.5em;
+    font-size: 15px;
+    width: fit-content;
+
+}
+
+#buttom_search {
+
+    background-color: rgb(34, 21, 70);
+    border: transparent;
+    color: white;
+    border-radius: 80px;
+    padding: 0.5em 1.5em;
+    font-size: 15px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+/*End: Buscador de Canciones*/
+
+/*Start: Canciones Izq*/
+
+.home_page_buscador_izq {
+
+    display: flex;
+    justify-self: start;
+}
+
+.biblioteca_home {
+
+    width: 25em;
+    height: 9em;
+    background-color: rgba(255, 255, 255, 0.464);
+    margin: 1em;
+    border-radius: 4%;
+    display: grid;
+    justify-content: center;
+
+}
+
+.favorites_home {
+    width: 25em;
+    height: 9em;
+    background-color: rgba(255, 255, 255, 0.464);
+    margin: 1em;
+    border-radius: 4%;
+    display: grid;
+    justify-content: center;
+}
+
+.playlist_home{
+
+    width: 25em;
+    height: 9em;
+    background-color: rgba(255, 255, 255, 0.464);
+    margin: 1em;
+    border-radius: 4%;
+    display: grid;
+    justify-content: center;
+
+}
+
+.bibloteca_songs_container,
+.bibloteca_fav_container,
+.bibloteca_playlist_container {
+
+    display: flex;
+    width: 22em;
+    height: 3.1em;
+    align-items: center;
+    justify-content: space-around;
+    text-wrap: wrap;
+    padding: 3px 3px 3px 3px;
+    background-color: rgba(246, 227, 200, 0.753);
+    border-radius: 4%;
+    overflow-y: scroll;
+}
+
+
+.song_main_portada {
+    
+    height: 2.3em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 20%;
+    justify-content: center;
+
+}
+
+#Favoritos,
+#Biblioteca,
+#Playlist {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    color: rgb(34, 21, 70);
+    padding: 10px;
+    align-items: center;
+}
+
+.songs_names {
+    
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: small;
+}
+
+.songs_artist {
+    
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: small;
+}
+
+.buttom_search {
+    display: block;
+    text-wrap: nowrap;
+    width: 1em;
+    height: 1em;
+
+}
+
+.buttom_search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*End: Buscador de Canciones*/
+
+/*Start: Reproductor de Canciones*/
+
+.home_page_buscador_der {
+    
+    display: flex;
+    position: absolute;
+    top: 19.6%;
+    left: 41.2%;
+    background-color: rgba(255, 255, 255, 0.464);
+    width: 50em;
+    height: 35em;
+    border-radius: 5%;
+}
+
+.player_content {
+
+    display: grid;
+    padding: 45px 45px;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15em;
+}
+
+
+#main_portada {
+
+    position: absolute;
+    height: 20em;
+    border-radius: 4%;
+}
+
+.player_button{
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+
+.player_buttoms_reproducer img,
+.player_buttoms_container_volumen img {
+
+    width: 4.2em;
+
+}
+
+.player_buttoms_container_reprodutor {
+
+    background-color: rgba(177, 221, 233, 0.734);
+    width: fit-content;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 10%;
+    margin-left: 2.6em;
+    margin-top: -9.2em;   
+}
+
+
+.player_details {
+
+    position: relative;
+    display: grid;
+    background-color: rgba(247, 253, 255, 0.918);
+    width: 20em;
+    height: 15em;
+    padding: 25px;
+    border-radius: 8%;
+    margin-left: -8.5em;
+    margin-top: 2em;  
+
+}
+
+.player_details p {
+
+    font-family: "Jost", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    color: rgb(34, 21, 70);
+    align-items: center;
+}
+
+.player_buttoms_container_volumen {
+
+    background-color: rgba(234, 223, 156, 0.927);
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 10%;
+    margin-left: -4em ;
+    margin-top: -11.2em;   
+
+}
+
+.player_buttoms_container_volumen p {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: 20px;
+    color: rgb(34, 21, 70);
+}

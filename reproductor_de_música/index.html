@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyListening - Home </title>
+    <link rel="stylesheet" href="./estilos/main.css">
+    <link rel="stylesheet" href="./src/main.js">
+</head>
+<body>
+
+    <!--Start: Header-->
+
+    <header>
+        <div class="header_content">
+            <div href="./index.html" style="align-self: center;">
+                <div class="info_izquierda" id="izquierda_home">
+                    <h1>EasyListening.com</h1>
+                </div>
+            </div>
+            <div class="info_derecha" id="derecha_home">
+                <button class="registro_user" id="profile">My Profile</button>
+                <button class="registro_user" id="log out"> Log Out</button>
+            </div>
+        </div>
+    </header>
+
+    <!--End: Header-->
+
+    <!--Start: Home Page-->
+
+    <main>
+        <section class="home_page_buscador_izq">
+
+            <div class="info_izquierda_search">
+                <div id="search_container">
+                    <label for="search-text">Buscador</label>
+                <div id="search">                      
+                    <div class="search-contenedor">
+                        <input type="text" placeholder="¿Qué deseas escuchar?" id="texto_buscar" name="texto_buscar"/>
+                        <label for="search_buttom"><button id="buttom_search">Buscar </button></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="biblioteca_home">
+                 <!--Prueba canción main-->
+                    <div class="biblioteca_text">
+                        <h3 id="Biblioteca"> Mi Librería de Música</h3>
+                    </div>
+                    <div class ="search_songs">
+                        <div class="bibloteca_songs_container" id="libraryContainer">
+                            <img class="song_main_portada" src="./portadas_tracks/out_of_time_portada.jpg" alt="songs_portadas">
+                            <div class="songs_details">
+                                <div class="songs_names">Out of Time</div>
+                                <div class="songs_artist">The Weeknd</div>
+                            </div>
+                            <div class="buttom_search">
+                                <button class="play_song">
+                                    <i class="bi bi-play-fill"></i>
+                                </button>
+                                <button id="liked_songs">
+                                    <i class="bi bi-suit-heart-fill"></i>
+                                </button>
+                                <button id="add_songs">
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </button>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="playlist_home">
+                <!--Prueba canción main-->
+                    <div class="biblioteca_text">
+                        <h3 id="Playlist"> My Playlist</h3>
+                    </div>
+                <div class="search_songs">
+                    <div class="bibloteca_playlist_container" id="playlistContainer">
+                        <img class="song_main_portada" src="./portadas_tracks/out_of_time_portada.jpg" alt="songs_portadas">
+                        <div class="songs_details">
+                            <div class="songs_names">Out of Time</div>
+                            <div class="songs_artist">The Weeknd</div>
+                        </div>
+                        <div class="buttom_search">
+                            <button class="play_song">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <button id="liked_songs">
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </button>
+                            <button id="eliminate_songs">
+                                <i class="bi bi-trash-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="favorites_home">
+                <!--Prueba canción main-->
+                    <div class="biblioteca_text">
+                        <h3 id="Favoritos"> Mis Favoritos</h3>
+                    </div>
+                <div class="search_songs">
+                    <div class="bibloteca_fav_container" id="favoriteContainer">
+                        <img class="song_main_portada" src="./portadas_tracks/out_of_time_portada.jpg" alt="songs_portadas">
+                        <div class="songs_details">
+                            <div class="songs_names">Out of Time</div>
+                            <div class="songs_artist">The Weeknd</div>
+                        </div>
+                        <div class="buttom_search">
+                            <button class="play_song">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <button id="liked_songs">
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </button>
+                            <button id="add_songs">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_page_buscador_der">
+            <div class="player_container">
+                    <div class="player_content">
+                        
+                        <div class="portadas_songs"> <!--Prueba 1 portada-->
+                            <img  id= "main_portada"src="portadas_tracks/out_of_time_portada.jpg" alt="main_album">
+                        </div>
+
+                        <div class="player_details">
+                            <p>Canción</p>
+                            <p>Artista</p>
+                            <p>Duración</p>
+                            <p>Álbum</p>
+                            <p>Género</p>
+                        </div>
+    
+                        <div class="player_buttoms_container_reprodutor">
+                            <div class="player_buttoms_reproducer">
+                                <button class="player_button" id="backward_songs">
+                                    <img src="./estilos/imagenes/skip-backward-circle-fill.svg" alt="backward">
+                                </button>
+                                <button class="player_button" id="reproducer_songs">
+                                    <img src="./estilos/imagenes/play-circle-fill.svg" alt="player">
+                                </button>
+                                <button class="player_button" id="forward_songs">
+                                    <img src="./estilos/imagenes/skip-forward-circle-fill.svg" alt="forward">
+                                </button>
+                            </div>
+
+                        </div>
+                        
+                        <div class="player_buttoms_container_volumen">
+                            <p>Volumen</p>
+                            <div id="player_buttoms_volumen">
+                                <button class="player_button" id="high_volumen">
+                                    <img src="./estilos/imagenes/volume-up-fill.svg" alt="">
+                                </button>
+                                <button class="player_button" id="mute_volumen">
+                                    <img src="./estilos/imagenes/volume-mute-fill.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="../reproductor_de_música/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/curitiba');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Hedvig+Letters+Serif:opsz@12..24&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Hedvig+Letters+Serif:opsz@12..24&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+#login {
+
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.464);
+    transform: translate(-50%, -50%);
+    padding: 75px;
+    border-radius: 30px;
+    z-index: 2;
+}
+.menu_inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#text_page{
+    text-align: center;
+    color: rgb(5, 5, 71);;
+    font-family: 'Curitiba', sans-serif;
+    font-size: 70px;
+    
+}
+
+#slogan_page{
+    text-align: center;
+    color: rgba(6, 11, 13, 0.978);
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+.usuario, .contrasena, .boton_inicio_sesion{
+    padding: 15px;
+}
+#text_username,
+#text_password {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.usuario, .titulo_usuario,
+.contrasena, .titulo_contrasena {
+  text-align: center;
+}
+.espacio{
+    height: 20px;
+    width: 150px;
+    background-color: #bfd7df;
+    border: transparent;
+    border-radius: 95px;
+    padding: 1.2em 1.8em;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+
+}
+
+
+.boton_inicio_sesion button {
+
+    background-color:  rgb(5, 5, 71);
+    border: transparent;
+    border-radius: 95px;
+    padding: 0.5em 1em;
+    font-size: 17px;
+    color: white;
+    font-family:'Poppins', sans-serif;
+    width: fit-content;
+    cursor: pointer;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.capa {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    background: black;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+#username_icon {
+
+    position: relative;
+    z-index: 1;
+    color: black;
+    font-size: 20px;
+    right: 2em;
+    
+}
+
+
+#password_icon {
+
+    position: relative;
+    z-index: 1;
+    color: black;
+    font-size: 20px;
+    right: 2em;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    
+}
